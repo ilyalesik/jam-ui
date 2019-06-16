@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
-import styled, { css } from "reshadow";
+import styled, { css, style } from "reshadow";
 import {ThemeContext} from "../../utils/ThemeProvider";
 
 export const Button = ({ children, styles, ...props }) => {
     const {color = "#4ba82e"} = useContext(ThemeContext);
-    return styled`
+    return styled(styles)`
       button {
         display: flex;
         align-items: center;
@@ -25,9 +25,11 @@ export const Button = ({ children, styles, ...props }) => {
         text-transform: capitalize;
       }
 `(
-    <button {...props}>
-        <span>{children}</span>
-    </button>);
+        <root {...props}>
+            <button>
+                <span>{children}</span>
+            </button>
+        </root>);
 };
 
 export default Button;
