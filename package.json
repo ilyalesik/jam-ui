@@ -4,26 +4,30 @@
   "description": "UI library based on reshadow",
   "main": "index.js",
   "scripts": {
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "storybook": "start-storybook -p 6006",
+    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
   },
   "keywords": [
     "ui"
   ],
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-flow": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addon-actions": "5.0.10",
+    "@storybook/addon-info": "5.0.10",
+    "@storybook/addon-knobs": "5.0.10",
+    "@storybook/react": "5.0.10",
+    "babel-loader": "8.0.5",
+    "flow-bin": "^0.97.0",
+    "prettier": "^1.17.0"
+  },
   "dependencies": {
-    "core-js": "2.5.x",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-styleguidist": "^9.1.5",
     "reshadow": "^0.0.1-alpha.65"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.33.0"
   }
 }
