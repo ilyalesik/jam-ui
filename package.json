@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
+    "test": "jest",
     "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
   },
   "keywords": [
@@ -23,11 +24,13 @@
     "@storybook/react": "5.0.10",
     "babel-loader": "8.0.5",
     "flow-bin": "^0.97.0",
+    "jest": "^24.8.0",
     "prettier": "^1.17.0"
   },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
     "reshadow": "^0.0.1-alpha.65"
   }
 }
