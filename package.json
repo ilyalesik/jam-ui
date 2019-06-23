@@ -11,6 +11,9 @@
   "keywords": [
     "ui"
   ],
+  "jest": {
+    "testEnvironment": "node"
+  },
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
   "devDependencies": {

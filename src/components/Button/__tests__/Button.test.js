@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import Button from "../Button";
-
+import {getStyles} from 'reshadow'
 
 describe("<Button />", () => {
 
@@ -12,5 +12,6 @@ describe("<Button />", () => {
         )
         .toJSON();
         expect(tree).toMatchSnapshot();
+        expect(getStyles().css).toMatchSnapshot();
     });
 });
