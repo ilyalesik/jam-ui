@@ -4,6 +4,7 @@
   "description": "UI library based on reshadow",
   "main": "index.js",
   "scripts": {
+    "flow": "flow",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
@@ -26,7 +27,7 @@
     "@storybook/addon-knobs": "5.0.10",
     "@storybook/react": "5.0.10",
     "babel-loader": "8.0.5",
-    "flow-bin": "^0.97.0",
+    "flow-bin": "^0.101.1",
     "jest": "^24.8.0",
     "prettier": "^1.17.0"
   },
