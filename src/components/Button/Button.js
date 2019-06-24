@@ -1,7 +1,7 @@
 // @flow
 import React, { useContext } from "react";
 import styled, { css, style } from "reshadow";
-import { ThemeContext } from "../../utils/ThemeProvider";
+import { ThemeContext } from "../../theming/ThemeProvider";
 
 export const Button = ({ children, styles }: any) => {
     const theme = useContext(ThemeContext);
@@ -11,17 +11,15 @@ export const Button = ({ children, styles }: any) => {
             align-items: center;
             justify-content: center;
 
-            width: 225px;
-            height: 58px;
             border: none;
+            padding: 1em;
 
-            border-radius: 2px;
+            border-radius: ${theme.borderRadius};
             background-color: ${theme.primaryColor};
         }
         span {
-            font-family: Helvetica, sans-serif;
-            font-size: 20px;
-            line-height: 1.4;
+            font-family: ${theme.fontFamily};
+            font-size: 1em;
             color: #ffffff;
             text-transform: capitalize;
         }

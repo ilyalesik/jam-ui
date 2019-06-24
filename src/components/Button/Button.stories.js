@@ -2,8 +2,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "./Button";
-import { ThemeProvider } from "../../utils/ThemeProvider";
+import { ThemeProvider } from "../../theming/ThemeProvider";
 import styled, { css, style } from "reshadow";
+import {defaultTheme} from "../../theming/defaultTheme";
 
 storiesOf("Button", module)
     .add("Button", () => <Button>Push Me</Button>)
@@ -18,5 +19,5 @@ storiesOf("Button", module)
     });
 
 storiesOf("Button", module)
-    .addDecorator(story => <ThemeProvider options={{ primaryColor: "#ff0000" }}>{story()}</ThemeProvider>)
+    .addDecorator(story => <ThemeProvider options={{ ...defaultTheme, primaryColor: "#ff0000" }}>{story()}</ThemeProvider>)
     .add("Button themed", () => <Button>Push Me</Button>);

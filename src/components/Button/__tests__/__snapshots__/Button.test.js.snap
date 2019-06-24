@@ -2,15 +2,17 @@
 
 exports[`<Button /> Button renders correctly 1`] = `
 <button
-  className="___button_xh087_1"
+  className="___button_6tp77_1"
   style={
     Object {
-      "--c8_0": "#4ba82e",
+      "--c8_0": "2px",
+      "--c8_1": "#4ba82e",
+      "--c8_2": "Helvetica, sans-serif",
     }
   }
 >
   <span
-    className="___span_xh087_1"
+    className="___span_6tp77_1"
   >
     Push Me
   </span>
@@ -18,22 +20,20 @@ exports[`<Button /> Button renders correctly 1`] = `
 `;
 
 exports[`<Button /> Button renders correctly 2`] = `
-"<style type=\\"text/css\\" id=\\"reshadow-2023947909\\">.___button_xh087_1 {
+"<style type=\\"text/css\\" id=\\"reshadow-412681657\\">.___button_6tp77_1 {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 225px;
-    height: 58px;
     border: none;
+    padding: 1em;
 
-    border-radius: 2px;
-    background-color: var(--c8_0);
+    border-radius: var(--c8_0);
+    background-color: var(--c8_1);
 }
-.___span_xh087_1 {
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: 1.4;
+.___span_6tp77_1 {
+    font-family: var(--c8_2);
+    font-size: 1em;
     color: #ffffff;
     text-transform: capitalize;
 }</style>"
