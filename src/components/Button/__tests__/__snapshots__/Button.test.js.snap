@@ -1,23 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> Button renders correctly 1`] = `
-<div
+<button
+  className="___button_xh087_1"
   style={
     Object {
       "--c8_0": "#4ba82e",
     }
   }
 >
-  <button
-    className="___button_xh087_1"
+  <span
+    className="___span_xh087_1"
   >
-    <span
-      className="___span_xh087_1"
-    >
-      Push Me
-    </span>
-  </button>
-</div>
+    Push Me
+  </span>
+</button>
 `;
 
 exports[`<Button /> Button renders correctly 2`] = `

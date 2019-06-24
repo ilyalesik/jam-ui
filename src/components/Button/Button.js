@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled, { css, style } from "reshadow";
 import { ThemeContext } from "../../utils/ThemeProvider";
 
-export const Button = ({ children, styles, ...props }) => {
+export const Button = ({ children, styles }) => {
     const { color = "#4ba82e" } = useContext(ThemeContext);
     return styled(styles)`
         button {
@@ -25,11 +25,9 @@ export const Button = ({ children, styles, ...props }) => {
             text-transform: capitalize;
         }
     `(
-        <root {...props}>
             <button>
                 <span>{children}</span>
             </button>
-        </root>
     );
 };
 
