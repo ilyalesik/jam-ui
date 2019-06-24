@@ -3,7 +3,7 @@ import styled, { css, style } from "reshadow";
 import { ThemeContext } from "../../utils/ThemeProvider";
 
 export const Button = ({ children, styles }) => {
-    const { color = "#4ba82e" } = useContext(ThemeContext);
+    const { color } = useContext(ThemeContext);
     return styled(styles)`
         button {
             display: flex;
