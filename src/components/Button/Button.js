@@ -1,9 +1,10 @@
+// @flow
 import React, { useContext } from "react";
 import styled, { css, style } from "reshadow";
 import { ThemeContext } from "../../utils/ThemeProvider";
 
-export const Button = ({ children, styles }) => {
-    const { color } = useContext(ThemeContext);
+export const Button = ({ children, styles }: any) => {
+    const theme = useContext(ThemeContext);
     return styled(styles)`
         button {
             display: flex;
@@ -15,7 +16,7 @@ export const Button = ({ children, styles }) => {
             border: none;
 
             border-radius: 2px;
-            background-color: ${color};
+            background-color: ${theme.primaryColor};
         }
         span {
             font-family: Helvetica, sans-serif;

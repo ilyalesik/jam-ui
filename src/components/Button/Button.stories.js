@@ -1,3 +1,4 @@
+// @flow
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "./Button";
@@ -17,5 +18,5 @@ storiesOf("Button", module)
     });
 
 storiesOf("Button", module)
-    .addDecorator(story => <ThemeProvider options={{ color: "#ff0000" }}>{story()}</ThemeProvider>)
+    .addDecorator(story => <ThemeProvider options={{ primaryColor: "#ff0000" }}>{story()}</ThemeProvider>)
     .add("Button themed", () => <Button>Push Me</Button>);
