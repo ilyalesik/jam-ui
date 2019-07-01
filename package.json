@@ -7,7 +7,15 @@
     "flow": "flow",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
+    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status",
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "render": "skpm-build --watch --run",
+    "render:once": "skpm-build --run"
+  },
+  "skpm": {
+    "main": "jam-ui.sketchplugin",
+    "manifest": "src/manifest.json"
   },
   "keywords": [
     "ui"
@@ -22,6 +30,7 @@
     "@babel/preset-env": "7.4.3",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "7.0.0",
+    "@skpm/builder": "0.4.0",
     "@storybook/addon-actions": "5.0.10",
     "@storybook/addon-info": "5.0.10",
     "@storybook/addon-knobs": "5.0.10",
@@ -32,8 +41,11 @@
     "prettier": "^1.17.0"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-primitives": "^0.8.0",
+    "react-sketchapp": "2.0.0",
     "react-test-renderer": "^16.8.6",
     "reshadow": "^0.0.1-alpha.65"
   }
