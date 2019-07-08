@@ -1,0 +1,30 @@
+{
+  "sizing": {
+    "xsmall": {
+      "name": "XSmall",
+      "size": 8
+    },
+    "small": {
+      "name": "Small",
+      "size": 16
+    },
+    "base": {
+      "name": "Base",
+      "size": 24
+    },
+    "large": {
+      "name": "Large",
+      "size": 44
+    },
+    "xlarge": {
+      "name": "XLarge",
+      "size": 64
+    }
+  },
+  "colors": {
+    "primary": "#276EF1",
+    "negative": "#E54937",
+    "warning": "#ED6F0E",
+    "positive": "positive"
+  }
+}

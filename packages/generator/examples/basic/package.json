@@ -1,0 +1,21 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "my-command.js",
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "render": "skpm-build --watch --run",
+    "render:once": "skpm-build --run"
+  },
+  "skpm": {
+    "main": "jam-ui.sketchplugin",
+    "manifest": "./manifest.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@skpm/builder": "0.4.0"
+  }
+}
